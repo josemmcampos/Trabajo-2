@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsive</title>
+    <style>
+        :root {
+            --color-primario: #06031a;
+            --color-hover: #1c794d;
+            --color-texto: #fff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #ebe1e1;
+        }
+
+        nav {
+            background: var(--color-primario);
+            padding: 10px;
+            max-width: 1600px;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 15px;
+        }
+
+        nav ul li a {
+            color: var(--color-texto);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background: var(--color-hover);
+            border-radius: 5px;
+        }
+
+        .contenedor-imagen {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .contenedor-imagen img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: var(--color-primario);
+            color: var(--color-texto);
+            padding: 10px;
+            max-width: 1600px;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        /* Media Queries para diseño responsive */
+        @media (max-width: 1024px) {
+            nav, footer {
+                max-width: 95%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .contenedor-imagen {
+                width: 90%;
+            }
+
+            footer {
+                font-size: 14px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 15px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-imagen">
+        <img src="logo.webp" width="350px" height="270px" alt="Imagen central">
+    </div>
+
+    <footer>
+        Elaborado por: José Miguel Méndez Campos
+    </footer>
+</body>
+</html>
