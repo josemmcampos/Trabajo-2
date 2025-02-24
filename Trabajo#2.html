@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño Responsive</title>
     <style>
+        /* Regla agregada al inicio */
+        body p {
+            color: green;
+        }
+
         :root {
             --color-primario: #06031a;
             --color-hover: #1c794d;
-            --color-texto: #fff;
+            --color-texto: white !important; /* Se añadió !important */
         }
 
         body {
@@ -19,12 +24,17 @@
             background-color: #ebe1e1;
         }
 
+        p {
+            color: blue; /* Se agregó esta regla para los párrafos */
+        }
+
         nav {
             background: var(--color-primario);
             padding: 10px;
             max-width: 1600px;
             margin: 0 auto;
             border-radius: 5px;
+            width: 100%;
         }
 
         nav ul {
@@ -54,7 +64,7 @@
 
         .contenedor-imagen {
             margin: 20px auto;
-            width: 80%;
+            width: 100%;
             max-width: 1000px;
         }
 
@@ -72,6 +82,7 @@
             max-width: 1600px;
             margin: 20px auto;
             border-radius: 5px;
+            width: 100%;
         }
 
         /* Media Queries para diseño responsive */
@@ -114,6 +125,11 @@
                 font-size: 12px;
             }
         }
+
+        /* Regla agregada al final */
+        body {
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -128,8 +144,21 @@
     </nav>
 
     <div class="contenedor-imagen">
-        <img src="logo.webp" width="350px" height="270px" alt="Imagen central">
+        <img src="https://raw.githubusercontent.com/josemmcampos/Trabajo-2/main/logo.webp" width="350px" height="270px" alt="Imagen central">
     </div>
+
+    <p>HTML (HyperText Markup Language)
+        Es el lenguaje de marcado que se usa para estructurar el contenido de una página web. Define los elementos como títulos,
+         párrafos, imágenes, enlaces y más..</p>
+
+         <p> CSS (Cascading Style Sheets)
+            Es el lenguaje de estilos que se usa para darle diseño y apariencia a una página web.
+             Permite cambiar colores, fuentes, márgenes, posiciones y hacer diseños responsivos con media queries.</p>
+
+             <p> JavaScript (JS)  Interactividad y Dinamismo 
+
+                Permite agregar efectos, animaciones y hacer que la web responda a la interacción del usuario.
+                Puede cambiar el contenido sin recargar la página.</p>
 
     <footer>
         Elaborado por: José Miguel Méndez Campos
